@@ -113,7 +113,7 @@ export default function Home() {
         <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
           <Logo />
           <Button asChild>
-            <Link href="/login">Acessar Portal</Link>
+            <Link href="https://pay.kirvano.com/2a87810a-e797-4105-8478-1b47b2c0d341">Comprar Agora</Link>
           </Button>
         </div>
       </header>
@@ -134,7 +134,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
                 <Button asChild size="lg" className="font-bold">
-                  <Link href="#pricing">GARANTIR MEU DEVOCIONAL AGORA</Link>
+                  <Link href="https://pay.kirvano.com/2a87810a-e797-4105-8478-1b47b2c0d341">GARANTIR MEU DEVOCIONAL AGORA</Link>
                 </Button>
               </div>
             </div>
@@ -237,7 +237,7 @@ export default function Home() {
                 <p className="mt-6 text-2xl">De <span className="line-through">R$97,00</span> por apenas:</p>
                 <p className="my-4 font-headline text-7xl font-bold">R$39,90</p>
                 <Button asChild size="lg" variant="secondary" className="w-full font-bold text-lg">
-                  <Link href="/login">💥 GARANTIR MEU DEVOCIONAL AGORA</Link>
+                  <Link href="https://pay.kirvano.com/2a87810a-e797-4105-8478-1b47b2c0d341">💥 GARANTIR MEU DEVOCIONAL AGORA</Link>
                 </Button>
                 <div className="mt-6 grid grid-cols-1 gap-2 text-left sm:grid-cols-2">
                   <div className="flex items-center gap-2">
