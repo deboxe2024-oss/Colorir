@@ -35,6 +35,12 @@
       "description": "Illustration of the Good Samaritan",
       "imageUrl": "https://images.unsplash.com/photo-1743341492342-168fb38a9644?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHb29kJTIwU2FtYXJpdGFufGVufDB8fHx8MTc2NDEwNjc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Good Samaritan"
+    },
+    {
+      "id": "guarantee",
+      "description": "Box of colored pencils",
+      "imageUrl": "https://images.unsplash.com/photo-1522111608460-19e7331e00fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29sb3JlZCUyMHBlbmNpbHN8ZW58MHx8fHwxNzY0MTEyNjA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colored pencils"
     }
   ]
 }

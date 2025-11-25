@@ -26,6 +26,7 @@ import { Logo } from '@/components/logo';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const heroImage = PlaceHolderImages.find(p => p.id === 'hero');
+const guaranteeImage = PlaceHolderImages.find(p => p.id === 'guarantee');
 
 export default function Home() {
   const features = [
@@ -263,44 +264,51 @@ export default function Home() {
         </section>
 
         {/* Guarantee Section */}
-        <section className="bg-primary/10 py-16 md:py-24">
-          <div className="container max-w-4xl">
-            <div className="text-center">
-              <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-                Garantia de <span className="text-primary">7 Dias</span>
-              </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-                Estamos tão confiantes na qualidade dos nossos devocionais que oferecemos uma garantia incondicional de 7 dias.
-              </p>
+        <section className="bg-secondary/50 py-16 md:py-24">
+          <div className="container grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+            <div className="relative mx-auto w-full max-w-md">
+              {guaranteeImage && (
+                <Image
+                  src={guaranteeImage.imageUrl}
+                  alt={guaranteeImage.description}
+                  width={500}
+                  height={500}
+                  className="rounded-xl shadow-2xl -rotate-6"
+                  data-ai-hint={guaranteeImage.imageHint}
+                />
+              )}
             </div>
-            <div className="mt-12 space-y-8">
-              <Card className="bg-card/80 p-6 backdrop-blur">
-                <CardContent className="p-0">
-                  <h3 className="font-headline text-xl font-bold">Como funciona:</h3>
-                  <ul className="mt-4 space-y-3">
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="size-5 shrink-0 text-green-500 mt-1" />
-                      <span>Adquira o material e teste por 7 dias completos.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="size-5 shrink-0 text-green-500 mt-1" />
-                      <span>Se não ficar satisfeito por qualquer motivo, devolvemos 100% do seu dinheiro, sem perguntas.</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-              <div className="rounded-lg bg-primary/20 p-4 text-center">
-                  <p className="flex items-center justify-center gap-2 font-semibold text-primary-foreground">
-                    <Lightbulb className="size-5" />
-                    Isso significa que você pode testar nosso material sem nenhum risco!
-                  </p>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Lock className="size-8 text-primary" />
+                <h2 className="font-headline text-3xl font-bold tracking-tighter">
+                  Garantia Incondicional de 7 Dias
+                </h2>
               </div>
+              <p className="text-lg text-muted-foreground">
+                Experimente sem risco! Se por qualquer motivo você não ficar satisfeito, devolvemos 100% do seu dinheiro, sem burocracia, sem perguntas.
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="size-5 text-green-500" />
+                  <span>Você testa o material por 7 dias.</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="size-5 text-green-500" />
+                  <span>Não gostou? Devolvemos tudo.</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="size-5 text-green-500" />
+                  <span>Simples assim.</span>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
 
+
         {/* FAQ Section */}
-        <section id="faq" className="bg-secondary py-16 md:py-24">
+        <section id="faq" className="py-16 md:py-24">
           <div className="container mx-auto max-w-3xl">
             <h2 className="font-headline text-center text-3xl font-bold tracking-tighter sm:text-4xl">
               ❓ Dúvidas Frequentes
