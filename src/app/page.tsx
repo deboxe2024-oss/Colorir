@@ -138,14 +138,14 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto w-full max-w-md aspect-video">
+            <div className="relative mx-auto w-full max-w-sm aspect-[9/16]">
               <video
                 src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8114181773400915.mp4"
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="rounded-xl shadow-2xl w-full h-full object-cover"
+                className="rounded-xl shadow-2xl w-full h-full object-contain"
               />
             </div>
           </div>
