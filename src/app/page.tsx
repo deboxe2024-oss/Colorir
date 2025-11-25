@@ -141,9 +141,7 @@ export default function Home() {
             <div className="relative mx-auto w-full max-w-sm aspect-[9/16]">
               <video
                 src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8114181773400915.mp4"
-                autoPlay
-                muted
-                loop
+                controls
                 playsInline
                 className="rounded-xl shadow-2xl w-full h-full object-contain"
               />
