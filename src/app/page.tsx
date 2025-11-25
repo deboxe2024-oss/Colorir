@@ -25,7 +25,6 @@ import {
 import { Logo } from '@/components/logo';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-const heroImage = PlaceHolderImages.find(p => p.id === 'hero');
 const guaranteeImage = PlaceHolderImages.find(p => p.id === 'guarantee');
 
 export default function Home() {
@@ -139,17 +138,12 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto w-full max-w-md">
-              {heroImage && (
-                <Image
-                  src={heroImage.imageUrl}
-                  alt={heroImage.description}
-                  width={600}
-                  height={600}
-                  className="rounded-xl shadow-2xl"
-                  data-ai-hint={heroImage.imageHint}
-                />
-              )}
+            <div className="relative mx-auto w-full max-w-md aspect-video">
+              <video
+                src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.7796913847461723.mp4"
+                controls
+                className="rounded-xl shadow-2xl w-full h-full"
+              />
             </div>
           </div>
         </section>
