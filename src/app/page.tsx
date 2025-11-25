@@ -140,9 +140,12 @@ export default function Home() {
             </div>
             <div className="relative mx-auto w-full max-w-md aspect-video">
               <video
-                src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.7796913847461723.mp4"
-                controls
-                className="rounded-xl shadow-2xl w-full h-full"
+                src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8114181773400915.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-xl shadow-2xl w-full h-full object-cover"
               />
             </div>
           </div>
