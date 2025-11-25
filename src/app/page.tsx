@@ -142,7 +142,6 @@ export default function Home() {
               <video
                 src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8114181773400915.mp4"
                 controls
-                playsInline
                 className="rounded-xl shadow-2xl w-full h-full object-contain"
               />
             </div>
