@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Conect Kids Devotionals',
+  title: 'Clubinho da Bíblia Kids Devotionals',
   description: 'Uma jornada de fé, aprendizado e conexão em família — começando hoje mesmo!',
 };
 

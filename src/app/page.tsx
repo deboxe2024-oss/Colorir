@@ -127,7 +127,7 @@ export default function Home() {
                 🌟 LANÇAMENTO OFICIAL – EDIÇÃO LIMITADA
               </span>
               <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                Conect Kids – Devocionais que Transformam o Coração das Crianças
+                Clubinho da Bíblia Kids – Devocionais que Transformam o Coração das Crianças
               </h1>
               <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl">
                 Uma jornada de fé, aprendizado e conexão em família — começando hoje mesmo!
@@ -326,18 +326,11 @@ export default function Home() {
       </main>
 
       <footer className="border-t py-8">
-        <div className="container flex flex-col items-center justify-between gap-6 sm:flex-row">
-          <div className="text-center sm:text-left">
-            <p className="font-semibold">© Conect Kids</p>
+        <div className="container flex flex-col items-center justify-center gap-6 text-center">
+            <p className="font-semibold">© Clubinho da Bíblia Kids</p>
             <p className="text-sm text-muted-foreground">
               Desenvolvido com <Heart className="inline size-4 text-red-500" /> para famílias cristãs e ministérios infantis.
             </p>
-          </div>
-          <Button variant="outline" asChild>
-            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
-              📞 Precisa de ajuda? Fale no WhatsApp
-            </a>
-          </Button>
         </div>
       </footer>
     </div>
