@@ -234,8 +234,8 @@ export default function Home() {
                 <span className="rounded-full bg-background px-4 py-1.5 text-sm font-semibold text-foreground">
                   🎁 OFERTA ESPECIAL DE LANÇAMENTO
                 </span>
-                <p className="mt-6 text-2xl">De <span className="line-through">R$ 97</span> por apenas:</p>
-                <p className="my-4 font-headline text-7xl font-bold">R$39,00</p>
+                <p className="mt-6 text-2xl">De <span className="line-through">R$97,00</span> por apenas:</p>
+                <p className="my-4 font-headline text-7xl font-bold">R$39,90</p>
                 <Button asChild size="lg" variant="secondary" className="w-full font-bold text-lg">
                   <Link href="/login">💥 GARANTIR MEU DEVOCIONAL AGORA</Link>
                 </Button>
