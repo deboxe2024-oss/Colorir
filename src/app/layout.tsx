@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { FacebookPixel } from '@/components/facebook-pixel';
+import { UtmfyPixel } from '@/components/utmify-pixel';
 
 export const metadata: Metadata = {
   title: 'Clubinho da Bíblia Kids Devotionals',
@@ -22,6 +23,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <FacebookPixel />
+        <UtmfyPixel />
         {children}
         <Toaster />
       </body>
