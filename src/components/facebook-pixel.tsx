@@ -1,31 +1,14 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import Script from 'next/script';
-import { useEffect, useState } from 'react';
 
 // This is a global constant, so it's defined outside the component
 const PIXEL_ID = '849153640899503';
 
 export function FacebookPixel() {
-  const [loaded, setLoaded] = useState(false);
-  const pathname = usePathname();
-
-  useEffect(() => {
-    // fbq is available on the window object after the script loads.
-    // We check if it's loaded before tracking events.
-    if (!loaded || typeof window.fbq !== 'function') return;
-
-    window.fbq('track', 'PageView');
-  }, [pathname, loaded]);
-
   return (
     <>
-      <Script
-        id="fb-pixel"
-        strategy="afterInteractive"
-        onLoad={() => setLoaded(true)}
-      >
+      <Script id="fb-pixel" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
